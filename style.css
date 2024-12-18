@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 75px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 125px;
+}
+
+header .button {
+    margin-right: 15px;
+    color: white;
+    font-size: 14px;
+    background-color: #0B363C;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;    
+}
+
+header .options a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* Footer */
+
+footer {
+    color: #a1c2c9;
+    background-color: #0B0F13;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #a1c2c9;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer .content-1 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+}
+
+footer .content-1 .social-networks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+footer .content-2 {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #a1c2c934;
+    padding: 20px;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .separator {
+    width: 1px;
+    height: 10px;
+    background-color: #a1c2c9;
+}
+
+/* Landing pages */
+
+.lp-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lp-section-1 .bubbles-left {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+    left: 5%;
+    bottom: 5%;
+    z-index: -1;    
+}
+
+.lp-section-1 .bubbles-right {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 50px;
+    right: 5%;
+    bottom: 5%;
+    z-index: -1;    
+}
+
+.lp-section-1 .bubbles-left .bubble-1, .lp-section-1 .bubbles-right .bubble-1 {
+    width: 250px;
+    border-radius: 32px;
+}
+
+.lp-section-1 .bubbles-left .bubble-2, .lp-section-1 .bubbles-right .bubble-2 {
+    background-color: #0B363C;
+    width: 175px;
+    height: 175px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.lp-section-1 .bubbles-left .bubble-2 span:nth-child(1), .lp-section-1 .bubbles-right .bubble-2 span:nth-child(1) {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.lp-section-1 .bubbles-left .bubble-2 span:nth-child(2), .lp-section-1 .bubbles-right .bubble-2 span:nth-child(2) {
+    color: #a1c2c9;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* .lp-section-1 .bubble-2 {
+    position: absolute;
+    width: 250px;
+    border-radius: 32px;
+    right: 5%;
+    bottom: 5%;
+    z-index: -1;
+}
+
+.lp-section-1 .bubble-3 {
+    position: absolute;
+    width: 250px;
+    border-radius: 32px;
+    left: 20%;
+    bottom: 5%;
+    z-index: -1;
+} */
+
+.lp-section-1 .content-1 {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lp-section-1 .content-1 .title {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.lp-section-1 .content-1 .sub-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.lp-section-1 .content-1 .button {
+    margin-top: 50px;
+    color: white;
+    font-size: 18px;
+    background-color: #0B363C;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 64px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 500;    
+}
+
+.lp-section-1 .content-1 .arrow {
+    position: absolute;
+    bottom: 25px;
+    animation: bounce 2s infinite;
+}
+
+.lp-section-2 {
+    color: white;
+    background-color: #0B363C;
+    padding-bottom: 130px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.lp-section-2 .content-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.lp-section-2 .content-1 .title {
+    font-size: 30px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+}
+
+.lp-section-2 .cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.lp-section-2 .cards .card {
+    width: 400px;
+    background-color: #153E44;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.lp-section-2 .cards .card .texts .title {
+    font-size: 25px;
+}
+
+.lp-section-2 .cards .card .texts .description {
+    font-size: 16px;
+    color: #a1c2c9;
+}
+
+.lp-section-3 {
+    padding-bottom: 130px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+}
+
+.lp-section-3 .content-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.lp-section-3 .content-1 .title {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center; 
+}
+
+.lp-section-3 .cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.lp-section-3 .cards .card {
+    position: relative;
+    background-color: #d7e2e454;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 16px;    
+}
+
+.lp-section-3 .cards .card img {
+    top: -40px;
+    left: 40%;
+    position: absolute;
+    width: 80px;
+    border-radius: 128px;
+}
+
+.lp-section-3 .cards .card .firstname {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.lp-section-3 .cards .card .advice {
+    text-align: justify;
+    font-style: italic;
+}
+
+.lp-section-3 .cards .card .stars {
+    display: flex;
+    gap: 5px;
+}
+
+.lp-section-3 .cards .card .stars .star {    
+    background-color: rgb(99, 190, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+}
+
+.lp-section-3 .button {
+    color: white;
+    font-size: 16px;
+    background-color: #0B363C;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
