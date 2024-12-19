@@ -80,6 +80,12 @@ footer .content-1 .social-networks {
     font-size: 24px;
 }
 
+footer .content-1 .social-networks svg {
+    width: 25px;
+    height: 25px; 
+    fill: #a1c2c9;
+}
+
 footer .content-2 {
     display: flex;
     justify-content: space-between;
@@ -285,74 +291,50 @@ footer .content-1 .links a {
     padding-bottom: 130px;
     padding-top: 100px;
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 35px;    
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 75px;
-}
-
-.lp-section-3 .content-1 {
-    display: flex;
-    justify-content: center;
+    gap: 75px;    
 }
 
 .lp-section-3 .content-1 .title {
-    font-size: clamp(15px, 4vw, 30px);;
+    font-size: clamp(15px, 4vw, 30px);
     font-weight: 500;
     text-align: center; 
 }
 
-.lp-section-3 .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 70px 35px;
-}
-
-.lp-section-3 .cards .card {
-    position: relative;
-    background-color: #d7e2e454;
-    max-width: 400px;
+.lp-section-3 .steps {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 25px;
-    border-radius: 16px;    
+    gap: 70px;
 }
 
-.lp-section-3 .cards .card img {
-    top: -40px;
-    position: absolute;
-    width: 80px;
-    border-radius: 128px;
-}
-
-.lp-section-3 .cards .card .firstname {
-    margin-top: 35px;
-    font-size: clamp(16px, 4vw, 20px);
-}
-
-.lp-section-3 .cards .card .advice {
-    font-size: clamp(10px, 3vw, 16px);
-    text-align: justify;
-    font-style: italic;
-}
-
-.lp-section-3 .cards .card .stars {
+.lp-section-3 .steps .step {
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
-.lp-section-3 .cards .card .stars .star {    
-    padding: 1px;
-    background-color: rgb(99, 190, 123);
-    display: flex;
+.lp-section-3 .steps .step .cube {
+    min-width: 120px;
+    max-height: 120px;
+    font-size: 52px;
+    background-color: #153E44;
+    color: white;
+    border-radius: 8px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: clamp(20px, 6vw, 34px);
-    height: clamp(20px, 6vw, 34px);
+}
+
+.lp-section-3 .steps .step .text .title {
+    font-size: clamp(15px, 5vw, 20px);
+    font-weight: 500;
+}
+
+.lp-section-3 .steps .step .text .description {
+    font-size: clamp(12px, 4vw, 16px);
 }
 
 .lp-section-3 .button {
@@ -366,6 +348,95 @@ footer .content-1 .links a {
     text-transform: uppercase;
     font-weight: 500;
     text-align: center;
+    margin-top: 25px;
+}
+
+.lp-section-4 {
+    padding-bottom: 130px;
+    padding-top: 100px;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+}
+
+.lp-section-4 .content-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.lp-section-4 .content-1 .title {
+    font-size: clamp(15px, 4vw, 30px);
+    font-weight: 500;
+    text-align: center; 
+}
+
+.lp-section-4 .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px 35px;
+}
+
+.lp-section-4 .cards .card {
+    position: relative;
+    background-color: #d7e2e454;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 16px;    
+}
+
+.lp-section-4 .cards .card img {
+    top: -40px;
+    position: absolute;
+    width: 80px;
+    border-radius: 128px;
+}
+
+.lp-section-4 .cards .card .firstname {
+    margin-top: 35px;
+    font-size: clamp(16px, 4vw, 20px);
+}
+
+.lp-section-4 .cards .card .advice {
+    font-size: clamp(10px, 3vw, 16px);
+    text-align: justify;
+    font-style: italic;
+}
+
+.lp-section-4 .cards .card .stars {
+    display: flex;
+    gap: 5px;
+}
+
+.lp-section-4 .cards .card .stars .star {    
+    padding: 1px;
+    background-color: rgb(99, 190, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(20px, 6vw, 34px);
+    height: clamp(20px, 6vw, 34px);
+}
+
+.lp-section-4 .button {
+    color: white;
+    font-size: clamp(12px, 3vw, 16px);
+    background-color: #0B363C;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
 }
 
 @keyframes bounce {
@@ -381,6 +452,24 @@ footer .content-1 .links a {
     .lp-section-1 .bubbles-left .bubble-1,
     .lp-section-1 .bubbles-right .bubble-1 {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .lp-section-3 .steps .step {
+        justify-content: center;
+    }
+
+    .lp-section-3 .steps .step .text {
+        max-width: 600px;
+    }
+
+    .lp-section-3 .steps .step .text {
+        text-align: center;
+    }
+
+    .lp-section-3 .steps .step .text .description {
+        text-align: start;
     }
 }
 
@@ -427,7 +516,7 @@ footer .content-1 .links a {
 }
 
 @media screen and (max-width: 400px) {
-    .lp-section-2, .lp-section-3 {
+    .lp-section-2, .lp-section-3, .lp-section-4 {
         padding-left: 12px;
         padding-right: 12px;
     }
