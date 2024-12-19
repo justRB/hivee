@@ -420,6 +420,10 @@ footer .content-1 .links a {
     .lp-section-1 .bubble-3 {
         display: flex;
     }
+
+    .lp-section-1 .content-1 {
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 400px) {
